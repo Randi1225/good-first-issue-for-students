@@ -1,31 +1,68 @@
-html,body{
-  margin:0;
+/* === START CUSTOM FONT === */
+@font-face {
+  font-family: 'Ribeye';
+  src: url('Ribeye-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* === END CUSTOM FONT === */
+
+/* === START GLOBAL RESET & TYPOGRAPHY === */
+html, body {
+  margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ribeye', 'Courier New', Courier, monospace, sans-serif;
   background-color: #FAFAFA;
-  color:#023047;
+  color: #023047;
 }
- header {
-            background-color: #006D77;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
+/* === END GLOBAL RESET & TYPOGRAPHY === */
 
- .container{
-  margin: 20px; 
-  padding:20px;
- }
-
-.filter{
-  padding-right: 8px;
-
-}
-#categoryFilter{
-  width: 70px;
-  height: 42px;
+/* === START HEADER & FOOTER === */
+header {
+  background-image: url('back.png');
+  padding: 10px;
   text-align: center;
-  color: rgb(106, 105, 105);
+}
+
+footer {
+  background-image: url('back.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  color: #fff;
+}
+/* === END HEADER & FOOTER === */
+
+/* === START BRAND STYLES === */
+.dessing {
+  color: #008cff;
+  background-color: rgba(30, 30, 30, 0.8);
+  padding: 8px;
+  border-radius: 8px;
+  display: inline-block;
+  font-family: 'Ribeye', sans-serif;
+  text-shadow: 0 0 0.5px #030e70;
+}
+/* === END BRAND STYLES === */
+
+/* === START MAIN CONTAINER === */
+.container {
+  margin: 20px;
+  padding: 20px;
+}
+
+.container h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #1f2a8a;
+}
+/* === END MAIN CONTAINER === */
+
+/* === START SEARCH & FILTERS === */
+.filter {
+  padding-right: 8px;
 }
 
 .search-bar {
@@ -33,45 +70,72 @@ html,body{
   max-width: 400px;
   display: flex;
 }
+
 .search-bar input {
   flex: 1;
   padding: 10px;
   font-size: 16px;
+  border-color: #1114c7;
+  box-shadow: 0 0 5px #2427df;
 }
+/* === END SEARCH & FILTERS === */
+
+/* === START CATEGORY SELECT DROPDOWN === */
+#categoryFilter {
+  width: 70px;
+  height: 42px;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #1114c7;
+  background-color: #fcf9f9;
+  color: rgb(106, 105, 105);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+#categoryFilter:hover {
+  box-shadow: 0 0 8px rgba(0, 255, 195, 0.4);
+  cursor: pointer;
+}
+/* === END CATEGORY SELECT DROPDOWN === */
+
+/* === START UTILITY CLASSES === */
 .hidden {
   display: none;
 }
+/* === END UTILITY CLASSES === */
 
-.container h3{
-  text-align: center;
-  font-size: 1.8rem;
- }
- .card{
+/* === START RESOURCE CARDS === */
+.card {
   background-color: #EDF6F9;
-  margin: 25px 0;
-  padding:10px;
+  margin: 1.7%;
+  padding: 1%;
   border-radius: 8px;
-  box-shadow:0 4px 8px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
- }
- .card:hover{
-  transform: scale(1.03);
-  background-color: #dee6e9;
- }
- .card a {
-            
-            color: #219EBC;
-            font-weight: bold;
-            text-decoration: none;
-            transition: 0.3s ease-in-out;
-        }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  font-family: 'Ribeye', 'Courier New', Courier, monospace, sans-serif;
+  color: #1f2a8a;
+  text-shadow: 0 0 0.5px #030e70;
+}
+
+.card:hover {
+  font-size: 1.05em;
+  background-color: #d3dadd;
+  box-shadow: 0 0 15px #1114c7;
+}
+/* === END RESOURCE CARDS === */
+
+/* === START LINKS INSIDE CARDS === */
+.card a {
+  color: #21829b;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
 .card a:hover {
-            color:#037b86;
-            cursor: pointer;
-        }
-footer{
- background-color:#219EBC;
- color:white;
- text-align :center;
- padding: 15px;
-      }
+  color: #037b86;
+  cursor: pointer;
+}
+/* === END LINKS INSIDE CARDS === */

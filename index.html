@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- === START HEAD === -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>Placement Resources</title>
+
+  <!-- Custom Styles -->
+
   <link href="styles/style.css" rel="stylesheet">
+
+  <title>Placement Resources</title>
 </head>
 
+<!-- === END HEAD === -->
+
 <body>
+
+  <!-- === START HEADER === -->
+
   <header>
-    <h1>Welcome to Placement Resources!</h1>
-    <p>Find and share the best resources to help students prepare for the placements</p>
+    <div class="dessing">
+      <h1>Welcome to Placement Resources!</h1>
+      <p>Find and share the best resources to help students prepare for the placements</p>
+    </div>
   </header>
 
-  <div class ="container">
+  <!-- === END HEADER === -->
+
+  <!-- === START MAIN CONTENT === -->
+
+  <section class="container">
     <h3>Recommended Resources</h3>
+
+    <!-- === START SEARCH & FILTER === -->
 
     <div class="search-bar">
       <div class="filter">
@@ -29,99 +52,111 @@
           <option value="documentation">Documentation</option>
         </select>
       </div>
-      <input type="text" id="searchInput" placeholder="Search for resources..." />
+      <input type="text" id="searchInput" placeholder="🔍 Search for resources..." />
     </div>
 
-    <div class="card" category="coding">
-      <h4>Coding Practice(mainly for DSA):Leetcode</h4>
+    <!-- === END SEARCH & FILTER === -->
+
+    <!-- === START RESOURCE CARDS === -->
+
+    <article class="card" data-category="coding">
+      <h4>Coding Practice (mainly for DSA): Leetcode</h4>
       <p>LeetCode offers a wide range of problems to practice coding skills for technical interviews.</p>
-      <a href="https://leetcode.com">visit leetcode</a>
-    </div>
+      <a href="https://leetcode.com">visit LeetCode</a>
+    </article>
 
-    <div class="card" category="learning">
+    <article class="card" data-category="learning">
       <h4>Online learning platform: edX</h4>
-      <p>edX is an online learning platform offering free and paid courses, certificates, and degrees from top universities like Harvard and MIT to help you gain skills and advance your career.</p>
+      <p>edX is an online learning platform offering free and paid courses, certificates, and degrees from top universities like Harvard and MIT.</p>
       <a href="https://www.edx.org/">visit edX</a>
-    </div>
+    </article>
 
-    <div class="card" category="coding">
+    <article class="card" data-category="coding">
       <h4>Competitive coding platform: Codeforces</h4>
-      <p>Codeforces is a competitive programming platform known for regular contests and a vast problem archive to improve algorithmic skills."</p>
-      <a href="https://www.edx.org/">visit codeforces</a>
-    </div>
-    <div class="card">
-      <h4>Learning Git: Git Immersion</h4> 
-      <p>Git Immersion is a guided tour that helps you learn Git through hands-on labs and practical examples.</p>
-      <a href="https://gitimmersion.com">visit gitimmersion</a> 
-    </div>
+      <p>Codeforces is a competitive programming platform known for contests and algorithmic challenges.</p>
+      <a href="https://codeforces.com">visit Codeforces</a>
+    </article>
 
-    <div class="card" category="coding">
+    <article class="card" data-category="learning">
+      <h4>Learning Git: Git Immersion</h4>
+      <p>Git Immersion is a guided tour that helps you learn Git through hands-on labs.</p>
+      <a href="https://gitimmersion.com">visit Git Immersion</a>
+    </article>
+
+    <article class="card" data-category="coding">
       <h4>Coding Practice: Frontend Mentor</h4>
-      <p>Frontend Mentor offers real-world frontend challenges to improve your HTML, CSS, and JavaScript skills.</p>
-      <a href="https://www.frontendmentor.io/">visit frontend mentor</a>
-    </div>
+      <p>Frontend Mentor offers frontend challenges to improve your HTML, CSS, and JS skills.</p>
+      <a href="https://www.frontendmentor.io/">visit Frontend Mentor</a>
+    </article>
 
-    <div class="card" category="documentation">
+    <article class="card" data-category="documentation">
       <h4>Online Documentation: DevDocs</h4>
-      <p>Combines multiple developer documentations in one fast, searchable interface.</p>
-      <a href="https://devdocs.io">visit devdocs</a>
-    </div>
+      <p>Combines multiple developer docs in one fast, searchable interface.</p>
+      <a href="https://devdocs.io">visit DevDocs</a>
+    </article>
 
-    <div class="card" category="sql">
+    <article class="card" data-category="sql">
       <h4>Practice SQL: SQLZoo</h4>
-      <p>platform for practing SQL with projects</p>
-      <a href="https://www.sqlzoo.net/wiki/SQL_Tutorial">visit sqlzoo</a>
-    </div>
+      <p>Platform for practicing SQL with interactive projects.</p>
+      <a href="https://www.sqlzoo.net/wiki/SQL_Tutorial">visit SQLZoo</a>
+    </article>
 
-    <div class="card" category="coding">
-      <h4>Coding Challenge: Code wars</h4>
-      <p>Coding practice for all programming levels</p>
-      <a href="https://www.codewars.com/">visit Code wars</a>
-    </div>
+    <article class="card" data-category="coding">
+      <h4>Coding Challenge: Codewars</h4>
+      <p>Coding practice for all programming levels.</p>
+      <a href="https://www.codewars.com/">visit Codewars</a>
+    </article>
 
-    <div class="card" category="coding">
+    <article class="card" data-category="coding">
       <h4>Coding Test: HackerRank</h4>
-      <p>Coding Test & Interview Solution</p>
+      <p>Coding tests and interview prep tools.</p>
       <a href="https://www.hackerrank.com/">visit HackerRank</a>
+    </article>
+
+    <!-- === END RESOURCE CARDS === -->
+
+  </section>
+
+  <!-- === END MAIN CONTENT === -->
+
+  <!-- === START FOOTER === -->
+
+  <footer>
+    <div class="dessing">
+      <p>Hope you learnt how to contribute using this project and don’t forget to use the resources.</p>
+      <p>Happy coding!!!</p>
     </div>
-    
+  </footer>
 
-</div>
-<footer>
-  <p>Hope you learnt how to contribute using this project and Don't forget to use the resources
-    <p>Happy coding!!!</p>
-  </p>
-</footer>
+  <!-- === END FOOTER === -->
 
-<script>
-  const searchInput = document.getElementById('searchInput');
-  const categoryFilter = document.getElementById('categoryFilter');
+  <!-- === START SCRIPT === -->
 
-  function searchAndFilter() {
-    const searchText = searchInput.value.toLowerCase();
-    const selectedCategory = categoryFilter.value;
-    const cards = document.querySelectorAll('.card');
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
 
-    cards.forEach(card => {
-      const text = card.textContent.toLowerCase();
-      const cardCategory = card.getAttribute('category');
+    function searchAndFilter() {
+      const searchText = searchInput.value.toLowerCase();
+      const selectedCategory = categoryFilter.value;
+      const cards = document.querySelectorAll('.card');
 
-      const matchesSearch = text.includes(searchText);
-      const matchesCategory = selectedCategory === "all" || cardCategory === selectedCategory;
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        const cardCategory = card.dataset.category;
 
-      if (matchesSearch && matchesCategory) {
-        card.classList.remove('hidden');
-      } else {
-        card.classList.add('hidden');
-      }
-    });
-  }
+        const matchesSearch = text.includes(searchText);
+        const matchesCategory = selectedCategory === "all" || cardCategory === selectedCategory;
 
-  searchInput.addEventListener('input', searchAndFilter);
-  categoryFilter.addEventListener('change', searchAndFilter);
-</script>
+        card.classList.toggle('hidden', !(matchesSearch && matchesCategory));
+      });
+    }
 
-
+    searchInput.addEventListener('input', searchAndFilter);
+    categoryFilter.addEventListener('change', searchAndFilter);
+  </script>
+  
+  <!-- === END SCRIPT === -->
 
 </body>
 </html>
